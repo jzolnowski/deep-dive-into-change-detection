@@ -14,7 +14,7 @@ import { startAnimations, stopAnimations } from '../animations';
   standalone: true,
   selector: 'child',
   templateUrl: './child.component.html',
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, CounterComponent]
 })
 export class ChildComponent {
